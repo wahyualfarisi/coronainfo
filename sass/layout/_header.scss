@@ -1,0 +1,77 @@
+.header {
+
+    // FUNCTIONALITY
+    perspective: 150rem;
+    -moz-perpective: 150rem;
+    position: relative;
+    height: 60vh;
+
+    @media(max-width: 600px) {
+        height: 40vh;
+    }
+
+
+    &__side {
+        
+        transition: all .8s ease;    
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    }
+
+  
+
+    //FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 83rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
+
+        &--1{
+            background-image: linear-gradient(to right bottom , $color-primary, $color-tertiary-dark),
+            url(../../img/world.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 5.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 63rem;
+        right: 2rem;
+        width: 95%;
+
+        @media(max-width: 600px) {
+            top: 62rem;
+            right: 0rem;
+            width: 95%;
+        }
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+
+        &--1 {
+            background-image: linear-gradient(to right bottom , 
+            rgba($color-primary, .85),
+            rgba($color-tertiary-dark, .85));
+        }
+    }
+   
+   
+
+}

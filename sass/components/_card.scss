@@ -1,0 +1,38 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, .16);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+
+    &__country {
+        font-size: 4.5rem;
+        background-image: linear-gradient(to right, $color-primary, $color-tertiary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 2px;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-top: 1.4rem;
+
+        &:not(:last-child){
+            margin-right: 4.5rem;
+
+            @media(max-width: 600px) {
+                margin-right: 1rem;
+            }
+        }
+    }   
+}

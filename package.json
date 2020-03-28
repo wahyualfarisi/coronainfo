@@ -1,0 +1,21 @@
+{
+  "name": "webpack-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "compile:sass": "node-sass sass/main.scss dist/style.css --w"
+  },
+  "author": "wahyu alfarisi",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.13.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {}
+}
