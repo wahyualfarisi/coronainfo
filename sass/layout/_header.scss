@@ -48,15 +48,29 @@
         text-align: right;
         color: $color-white;
         position: absolute;
-        top: 63rem;
+        top: 53rem;
         right: 2rem;
         width: 95%;
 
-        @media(max-width: 600px) {
-            top: 62rem;
+        @media(max-width: 1200px) {
+            top: 65rem;
             right: 0rem;
-            width: 95%;
+            width: 55%;
         }
+
+        @media(max-width: 600px) {
+            top: 35rem;
+            right: 0rem;
+            width: 65%;
+        }
+
+        @media(max-width: 400px) {
+            top: 20rem;
+            right: 1rem;
+            width: 65%;
+        }
+
+      
     }
 
     &__heading-span {
@@ -67,8 +81,8 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom , 
-            rgba($color-primary, .85),
-            rgba($color-tertiary-dark, .85));
+            rgba($color-primary, .1),
+            rgba($color-tertiary-dark, 1));
         }
     }
    

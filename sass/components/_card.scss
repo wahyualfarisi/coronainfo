@@ -2,10 +2,11 @@
     width: 75%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
-    background-color: rgba($color-white, .16);
+    background-color: rgba($color-white, 1);
     border-radius: 3px;
     padding: 6rem;
     padding-left: 9rem;
+
 
     &:not(:last-child){
         margin-bottom: 3rem;
@@ -13,6 +14,7 @@
 
     &__country {
         font-size: 4.5rem;
+        text-transform: uppercase;
         background-image: linear-gradient(to right, $color-primary, $color-tertiary-dark);
         -webkit-background-clip: text;
         color: transparent;
@@ -31,7 +33,11 @@
             margin-right: 4.5rem;
 
             @media(max-width: 600px) {
-                margin-right: 1rem;
+                margin-right: 10rem;
+            }
+
+            @media(max-width: 400px) {
+                margin-right: 25rem;
             }
         }
     }   
