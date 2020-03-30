@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log('ready')
+    console.log('ready gan !')
     const corona = {}
 
     const fetch_data = ( cb ) => {

@@ -65,7 +65,7 @@ untuk gradient bisa di spesifikasikan to right , to right bottom , to right top
     padding: 1.5rem 2rem;
     color: inherit;
     border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
     border: none;
     border-bottom: 3px solid transparent;
     width: 100%;
