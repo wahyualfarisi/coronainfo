@@ -25,7 +25,7 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($color-primary, $color-tertiary-dark);
+        background-image: radial-gradient($color-tertiary-light, $color-tertiary-dark);
         z-index: 1000;
         transition: transform .6s cubic-bezier(0.33, 1, 0.68, 1);
        
