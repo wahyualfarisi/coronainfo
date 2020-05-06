@@ -1,4 +1,4 @@
-var cacheName = 'covid-19-upda';
+var cacheName = 'covid-19-update';
 var filesToCache = [
     '/',
     '/index.html',

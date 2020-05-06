@@ -8,7 +8,7 @@ $(document).ready(function() {
             url: 'https://coronavirus-worlddata.herokuapp.com/all',
             type: 'GET',
             success: function(res) {
-                console.log(res)
+                console.log(res, 'updateres')
                 corona.data = res;
                 corona.indonesia = res['indonesia'];
                 cb(corona)
