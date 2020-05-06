@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log('ready gan !')
     const corona = {}
 
     const fetch_data = ( cb ) => {
@@ -9,9 +8,9 @@ $(document).ready(function() {
             url: 'https://coronavirus-worlddata.herokuapp.com/all',
             type: 'GET',
             success: function(res) {
+                console.log(res)
                 corona.data = res;
                 corona.indonesia = res['indonesia'];
-
                 cb(corona)
             },
             error: function(err) {
@@ -22,8 +21,6 @@ $(document).ready(function() {
 
     const renderData = (res, DATA) => {
         //1. finish loader
-
-
         let html = '', replaceCured, replaceDeaths
         if(DATA.length > 0){
             DATA.forEach(item => {
